@@ -7,6 +7,16 @@ module.exports = {
       return array.slice(0, n);
     }
   
-  }
+  },
 
-};
+
+//maximum value in the array
+  max : function (array) {
+  if (array.length === null || array.length === false){
+    return -Infinity;
+  }else{
+    return Math.max.apply(Math, array);
+  }
+ }
+}; 
+
