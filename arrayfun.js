@@ -24,5 +24,19 @@ module.exports = {
     }else{
       return Math.min.apply(Math, array);
     }
+  },
+
+ //intersection of an array
+intersection : function(a, b){
+  var remaining = {};
+  var intersect = [];
+  for (var i = 0; i < b.length; i++) {
+    remaining[b[i]] = true;
   }
- };
+  for (var j = 0; j < a.length; j++) {
+  if (remaining[a[j]]) 
+    intersect.push(a[j]);
+   } console.log(intersect);
+  return intersect;
+  }
+ }; 
