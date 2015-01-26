@@ -13,6 +13,7 @@ module.exports = {
   if (array.length === null || array.length === false){
     return -Infinity;
   }else{
+    //use reduce and iterate
     return Math.max.apply(Math, array);
   }
 },
@@ -39,4 +40,14 @@ intersection : function(a, b){
    } console.log(intersect);
   return intersect;
   }
- }; 
+ },
+
+ //difference of an array
+ difference : function(a1, a2){
+
+
+}  
+
+
+
+
