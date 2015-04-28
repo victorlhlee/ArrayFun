@@ -75,7 +75,7 @@ unique : function (array){
  difference : function(array, array2){
   for(var i = 0; i<array.length; i++){
     for(var j = 0; j<array2.length; j++){
-      if(array[i] === array2[i]){
+      if(array[i] === array2[j]){
         array.splice(i, 1);
         // The splice() method adds/removes items to/from an array, and returns the removed item(s).This method changes the original array
       }
